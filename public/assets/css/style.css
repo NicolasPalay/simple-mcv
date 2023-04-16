@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+
+:root{
+    --font-text: 'Artifika', serif;
+    --color-primary : #468204;
+    --color-secondary : #E0475B;
+}
+
+
+nav,main {
+    width:80%;margin:10px auto;
+}
+a{font-family: var(--font-text);text-decoration: none;color : var(--color-primary);
+}
+a:hover{color:var(--color-secondary )}
+
+/*navbar*/
+
+.tj-logo{width: 100px; height: auto;}
+nav form{width: 90%;height: 70px;}
+nav{display: flex;flex-wrap :wrap;}
+
+
+nav div{position: relative;width: 70%;padding: 12px;}
+#search input {
+    width: 70%;
+    height: 40px;
+    border-radius:15px;
+    position: relative;
+    padding-left: 30px;border:2px solid var(--color-primary);font-size: 1em
+}
+
+nav ul{display: flex;list-style: none;}
+.nav-ul-container{display: flex;justify-content: space-between;width:91%}
+.search-botton{border:0;position: absolute;z-index: 100;width: 39px;
+    height: 42px;top:16px; left: 68%;background: url("../images/icons/loop-search.png") no-repeat;
+    cursor:pointer;}
+.search-botton:hover{background: url("../images/icons/loop-search-hover.png") no-repeat}
+nav ul{display: flex;list-style: none;}
+.nav-ul-category{margin: -43px 85px;}
+.nav-ul-login{margin: -43px 0;font-size: 0.8em}
+.nav-ul-login li:first-child {margin: -8px 0;}
+.nav-ul-login li img {width:35px;}
+nav ul li{padding: 0 15px 0 0;}
+nav ul li a{font-size: 1.1em}
+
+
+/*bar search in index*/
+.home-page nav .nav-ul-category{margin: 15px;}
+.home-page nav .nav-ul-login{margin: 15px ;font-size: 0.8em}
+.home-page .search-bar{position: relative;width: 80%;}
+.home-page .search-botton{border:0;position: absolute;z-index: 100;width: 39px;
+    height: 42px;top:5px; left: 83%;background: url("../images/icons/loop-search.png") no-repeat;
+        cursor:pointer;}
+.home-page .search-botton:hover{background: url("../images/icons/loop-search-hover.png") no-repeat}
+header{display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.home-page #search{display: flex;justify-content: center}
